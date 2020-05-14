@@ -83,8 +83,7 @@ class ServiceNowAdapter extends EventEmitter {
     this.healthcheck();
   }
 
-  
-  /**
+    /**
     * @memberof ServiceNowAdapter
     * @method healthcheck
     * @summary Check ServiceNow Health
@@ -142,7 +141,6 @@ class ServiceNowAdapter extends EventEmitter {
     }
   
 
-  
   /**
    * @memberof ServiceNowAdapter
    * @method emitOffline
