@@ -1,4 +1,15 @@
 {
+  "id": "@acme/adapter-change_management",
+  "type": "Adapter",
+  "src": "main.js",
+  "export": "ServiceNowAdapter",
+  "roles": [
+    "admin",
+    "engineer",
+    "operator"
+  ],
+  "methods": [
+    {
   "name": "getRecord",
   "summary": "Get Change Tickets",
   "description": "Get the first ServiceNow change management ticket.",
@@ -15,7 +26,14 @@
       }
     }
   },
-  {
+  "roles": [
+    "admin",
+    "engineer",
+    "operator"
+  ],
+  "task": true
+},
+{
     "name": "postRecord",
     "summary": "Create Change Tickets",
     "description": "Create ServiceNow change management ticket.",
@@ -31,7 +49,6 @@
                 "$ref": "changeRequest#/definitions/changeTicket"
             }
         }
-    }
   }, 
   "roles": [
     "admin",
@@ -39,4 +56,6 @@
     "operator"
   ],
   "task": true
+}
+  ]
 }
