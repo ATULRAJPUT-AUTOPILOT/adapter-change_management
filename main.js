@@ -167,6 +167,7 @@ class ServiceNowAdapter extends EventEmitter {
 
 
     /**
+
      * @memberof ServiceNowAdapter
      * @method emitStatus
      * @summary Emit an Event
